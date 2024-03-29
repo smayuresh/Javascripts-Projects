@@ -83,7 +83,10 @@
         </button>
         <button
           class="button"
-          onclick="currentDisplay = currentDisplay + '='; document.querySelector('#display').value=currentDisplay;"
+          onclick="
+          
+          let result= eval(currentDisplay)
+          currentDisplay = result; document.querySelector('#display').value=currentDisplay;"
         >
           =
         </button>
